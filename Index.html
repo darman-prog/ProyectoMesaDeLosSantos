@@ -19,69 +19,28 @@
 </head>
 
 <body>
-<!-- Barra Superior Inicio -->
-<div class="contenedorMain">
-    <div class="contenedorSubMain">
-        <div class="fila">
-            <div class="contenedorInfo">
-                <div class="contenedorSubInfo">
-                    <p><i class="iconoInfo"></i>info@ejemplo.com</p>
-                    <p class="barraEspaciadora">|</p>
-                    <p><i class="iconoInfoNum"></i>+012 345 6789</p>
-                </div>
-            </div>
-
-            <div class="textoCentro">
-                <div class="alinearItemsCentro">
-                    <a class="textoPrimario" href="">
-                        <i class="fa-brands fa-facebook fa-2xl"></i>
-                    </a>
-                    <a class="textoPrimario" href="">
-                        <i class="fa-brands fa-x-twitter fa-2xl"></i>
-                    </a>
-                    <a class="textoPrimario" href="">
-                        <i class="fa-brands fa-instagram fa-2xl"></i>
-                    </a>
-                    <a class="textoPrimario" href="">
-                        <i class="fa-brands fa-youtube fa-xl"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Barra Superior Fin -->
-
 <!-- Barra Navegacion Inicio -->
 <div class="barra-navegacion">
   <div class="barra-navegacion-contenedor">
-      <nav class="barra-navegacion-menu">
-          <a href="#" class="barra-navegacion-logo">
-              <h1 class="barra-navegacion-titulo"><span class="barra-navegacion-titulo-destacado">Santander Explorer</span></h1>
-          </a>
-          <button type="button" class="barra-navegacion-toggle" data-toggle="collapse" data-target="#barraNavegacionColapso">
-              <span class="barra-navegacion-toggle-icon"></span>
-          </button>
-          <div class="barra-navegacion-colapso" id="barraNavegacionColapso">
-              <div class="barra-navegacion-lista">
-                  <a href="index.html" class="barra-navegacion-item ">Inicio</a>
-                  <a href="about.html" class="barra-navegacion-item">Sobre Nosotros</a>
-                  <a href="service.html" class="barra-navegacion-item">Servicios</a>
-                  <a href="package.html" class="barra-navegacion-item">Paquetes Turisticos</a>
-                  <div class="barra-navegacion-item-desplegable">
-                      <a href="#" class="barra-navegacion-item" data-toggle="dropdown"> Páginas</a>
-                      <div class="barra-navegacion-menu-desplegable">
-                          <a href="blog.html" class="barra-navegacion-item-desplegable-link">Blog</a>
-                          <a href="single.html" class="barra-navegacion-item-desplegable-link">Detalle del Blog</a>
-                          <a href="destination.html" class="barra-navegacion-item-desplegable-link">Destinos</a>
-                          <a href="guide.html" class="barra-navegacion-item-desplegable-link">Guias de Viaje</a>
-                          <a href="testimonial.html" class="barra-navegacion-item-desplegable-link">Testimonios</a>
-                      </div>
-                  </div>
-                  <a href="contact.html" class="barra-navegacion-item">Contacto</a>
-              </div>
-          </div>
-      </nav>
+    <nav class="barra-navegacion-menu" role="navigation" aria-label="Menú principal">
+      <a href="#carruselEncabezado" class="barra-navegacion-logo" aria-label="Ir al inicio">
+        <h1 class="barra-navegacion-titulo">
+          <span class="barra-navegacion-titulo-destacado">Santander Explorer</span>
+        </h1>
+      </a>
+      <button class="MenuDeslegable" type="button" aria-controls="barraNavegacionColapso" aria-expanded="false" aria-label="Mostrar menú">
+        <i class="fa-solid fa-bars fa-xl" aria-hidden="true"></i>
+      </button>
+      <div class="barra-navegacion-colapso" id="barraNavegacionColapso" hidden>
+        <div class="barra-navegacion-lista">
+          <a href="#carruselEncabezado" class="barra-navegacion-item">Inicio</a>
+          <a href="#seccion-sobre" class="barra-navegacion-item">Sobre Nosotros</a>
+          <a href="#servicios-inicio" class="barra-navegacion-item">Servicios</a>
+          <a href="#paquetes-inicio" class="barra-navegacion-item">Paquetes Turísticos</a>
+          <a href="#Registro" class="barra-navegacion-item">Contacto</a>
+        </div>
+      </div>
+    </nav>
   </div>
 </div>
 <!-- Barra Navegacion Fin -->
@@ -105,7 +64,7 @@
                 <div class="carrusel-caption">
                     <div class="carrusel-caption-contenido">
                         <h4 class="carrusel-subtitulo">Tours & Viajes</h4>
-                        <h1 class="carrusel-titulo">Descubre lugares increíbles con nosotros</h1>
+                        <h1 class="carrusel-titulo">Descubre lugares increíbles <br> con nosotros</h1>
                         <a href="" class="btn btn-principal">Reservar Ahora</a>
                     </div>
                 </div>
@@ -116,7 +75,7 @@
                 <div class="carrusel-caption">
                     <div class="carrusel-caption-contenido">
                         <h4 class="carrusel-subtitulo">Tours & Viajes</h4>
-                        <h1 class="carrusel-titulo">Descubre lugares increíbles con nosotros</h1>
+                        <h1 class="carrusel-titulo">Descubre lugares increíbles<br> con nosotros</h1>
                         <a href="" class="btn btn-principal">Reservar Ahora</a>
                     </div>
                 </div>
@@ -139,7 +98,7 @@
 
 
 <!-- Sobre Inicio -->
-<div class="seccion-sobre">
+<div class="seccion-sobre" id="seccion-sobre">
     <div class="sobre-contenedor">
         <div class="sobre-fila">
             <div class="sobre-imagen">
@@ -174,7 +133,7 @@
                 </div>
                 <div class="caracteristica-info">
                     <h5>Precios Competitivos</h5>
-                    <p>Magna sit magna dolor duo dolor labore rebum amet elitr est diam sea</p>
+                    <p>Accede a tarifas preferenciales y condiciones especiales diseñadas especialmente para ti.</p>
                 </div>
             </div>
             <div class="caracteristica">
@@ -182,8 +141,8 @@
                     <i class="fa fa-2x fa-award"></i>
                 </div>
                 <div class="caracteristica-info">
-                    <h5>Mejores Servicios</h5>
-                    <p>Magna sit magna dolor duo dolor labore rebum amet elitr est diam sea</p>
+                    <h5>Red de Apoyo Experta</h5>
+                    <p>Benefíciate de la experiencia y el conocimiento de una red global de asesores.</p>
                 </div>
             </div>
             <div class="caracteristica">
@@ -191,9 +150,8 @@
                     <i class="fa fa-2x fa-globe"></i>
                 </div>
                 <div class="caracteristica-info">
-                    <h5>Cobertura Mundial</h5>
-                    <p>Magna sit magna dolor duo dolor labore rebum amet elitr est diam sea</p>
-                </div>
+                    <h5>Conexión Con Santander</h5>
+                    <p>Descubre destinos fascinantes y experiencias inolvidables alrededor de santander con nuestro respaldo.</p>                </div>
             </div>
         </div>
     </div>
@@ -237,7 +195,7 @@
 
 
 <!-- Servicios Inicio -->
-<div class="contenedorFluido">
+<div class="contenedorFluido" id="servicios-inicio">
     <div class="contenedor">
         <div class="textoCentro">
             <h6 class="textoPrimario" style="letter-spacing: 5px;">Servicios</h6>
@@ -246,23 +204,23 @@
         <div class="fila">
             <div class="columnaServicio">
                 <div class="itemServicio">
-                    <i class="iconoRuta"></i>
-                    <h5 class="tituloServicio">Guía de Viaje</h5>
-                    <p class="textoServicio">Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem est amet labore</p>
+                    <i class="fa fa-2x fa-route iconoRuta"></i> 
+                    <h5 class="tituloServicio">Guía de Viaje Experto</h5>
+                    <p class="textoServicio">Nuestros guías locales te acompañarán en cada aventura, revelándote los secretos y la riqueza cultural de Santander.</p>
                 </div>
             </div>
             <div class="columnaServicio">
                 <div class="itemServicio">
-                    <i class="iconoBoletos"></i>
-                    <h5 class="tituloServicio">Reserva de Boletos</h5>
-                    <p class="textoServicio">Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem est amet labore</p>
+                    <i class="fa fa-2x fa-ticket-alt iconoBoletos"></i>
+                    <h5 class="tituloServicio">Reserva de Actividades y Entradas</h5>
+                    <p class="textoServicio">Olvídate de las filas. Gestionamos tus entradas a parques, teleféricos y actividades de aventura para que solo disfrutes.</p>
                 </div>
             </div>
             <div class="columnaServicio">
                 <div class="itemServicio">
-                    <i class="iconoHotel"></i>
-                    <h5 class="tituloServicio">Reserva de Hotel</h5>
-                    <p class="textoServicio">Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem est amet labore</p>
+                    <i class="fa fa-2x fa-hotel iconoHotel"></i>
+                    <h5 class="tituloServicio">Reserva de Alojamiento</h5>
+                    <p class="textoServicio">Encuentra el lugar perfecto para descansar, desde acogedoras cabañas hasta hoteles con encanto, adaptados a tu estilo y presupuesto.</p>
                 </div>
             </div>
         </div>
@@ -273,7 +231,7 @@
 
 
 <!-- Paquetes Inicio -->
-<div class="contenedorFluido">
+<div class="contenedorFluido" id="paquetes-inicio">
     <div class="contenedor">
         <div class="textoCentro">
             <h6 class="textoPrimario" style="letter-spacing: 5px;">Paquetes</h6>
@@ -281,7 +239,6 @@
             <p class="textoSecundario">Descubre los paisajes, aventuras y cultura de este increíble destino colombiano con nuestros paquetes diseñados para ti.</p>
         </div>
         <div class="filaPaquetes">
-            <!-- Paquete 1 -->
             <div class="columnaPaquete">
                 <div class="itemPaquete">
                     <img class="imagenPaquete" src="https://parquesdesantander.com/wp-content/uploads/2022/02/img-parque-nacional-del-chicamocha-home-768x512.jpg" alt="Cañón del Chicamocha">
@@ -300,7 +257,6 @@
                 </div>
             </div>
 
-            <!-- Paquete 2 -->
             <div class="columnaPaquete">
                 <div class="itemPaquete">
                     <img class="imagenPaqueteRedondeada" src="https://www.parapentesangil.com/wp-content/uploads/2022/04/Parapentesangil.jpg" alt="Parapente Mesa de los Santos">
@@ -319,7 +275,6 @@
                 </div>
             </div>
 
-            <!-- Paquete 3 -->
             <div class="columnaPaquete">
                 <div class="itemPaquete">
                     <img class="imagenPaqueteRedondeada" src="https://vagamundos.com/wp-content/uploads/2014/06/0501_mesa_santos.jpg" alt="Campo ecológico">
@@ -338,8 +293,7 @@
                 </div>
             </div>
 
-            <!-- Agrega más paquetes si deseas -->
-        </div>
+            </div>
     </div>
 </div>
 <!-- Paquetes Fin -->
@@ -558,22 +512,23 @@
 
 
 <!-- Pie de página Inicio -->
-<footer class="pie-pagina">
+<footer class="pie-pagina" id="Registro">
     <div class="pie-contenedor">
         <div class="pie-fila">
             <div class="pie-columna">
                 <h5>Contacto</h5>
-                <p><i class="fa fa-map-marker-alt"></i> Calle Ficticia #123, Bucaramanga</p>
-                <p><i class="fa fa-phone-alt"></i> +012 345 6789</p>
-                <p><i class="fa fa-envelope"></i> info@ejemplo.com</p>
+                <p><i class="fa fa-map-marker-alt"></i> Calle 20 # 11-10, La Mesa de los Santos, Santander</p>
+                <p><i class="fa fa-phone-alt"></i> +57 310 123 4567</p>
+                <p><i class="fa fa-envelope"></i> info@santanderexplorer.com</p>
             </div>
             <div class="pie-columna">
                 <h5>Enlaces Rápidos</h5>
                 <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="about.html">Sobre Nosotros</a></li>
-                    <li><a href="service.html">Servicios</a></li>
-                    <li><a href="contact.html">Contacto</a></li>
+                    <li><a href="#carruselEncabezado">Inicio</a></li>
+                    <li><a href="#seccion-sobre">Sobre Nosotros</a></li>
+                    <li><a href="#servicios-inicio">Servicios</a></li>
+                    <li><a href="#paquetes-inicio">Paquetes Turisticos</a></li>
+                    <li><a href="#registro">Contacto</a></li>
                 </ul>
             </div>
             <div class="pie-columna">
@@ -597,12 +552,6 @@
 <!-- Volver Arriba -->
 <a href="#" class="btn btn-lg btn-primario btn-lg-cuadrado volver-arriba"><i class="fa fa-angle-double-up"></i></a>
 
-<!-- Archivo Javascript de Contacto -->
-<script src="mail/contact.js"></script>
-
-<!-- Javascript de la Plantilla -->
-<script src="js/main.js"></script>
-    
 </body>
 
 </html>

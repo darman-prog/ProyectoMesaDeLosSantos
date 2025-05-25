@@ -103,3 +103,32 @@ document.addEventListener("DOMContentLoaded", function () {
       imagenElemento.classList.add("fade-in");
     }, 500);
   }, 4000);
+
+
+// menu hamburguesa
+document.addEventListener('DOMContentLoaded', () => {
+  const btnMenu = document.querySelector('.MenuDeslegable');
+  const menu = document.getElementById('barraNavegacionColapso');
+
+  btnMenu.addEventListener('click', () => {
+    const isExpanded = btnMenu.getAttribute('aria-expanded') === 'true';
+    btnMenu.setAttribute('aria-expanded', !isExpanded);
+    menu.classList.toggle('show');
+    if(menu.hasAttribute('hidden')) {
+      menu.removeAttribute('hidden');
+    } else {
+      menu.setAttribute('hidden', '');
+    }
+  });
+
+  // Opcional: cerrar menú al hacer clic en un link (ideal para móviles)
+  document.querySelectorAll('.barra-navegacion-item').forEach(link => {
+    link.addEventListener('click', () => {
+      if(window.innerWidth <= 768){
+        menu.classList.remove('show');
+        btnMenu.setAttribute('aria-expanded', 'false');
+        menu.setAttribute('hidden', '');
+      }
+    });
+  });
+});
