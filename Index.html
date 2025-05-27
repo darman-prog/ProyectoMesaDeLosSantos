@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Santander Explorer</title>
+    <title>Sabores y senderos santander</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
     <!-- Google Web Fonts -->
@@ -16,6 +16,8 @@
     <!-- links estilos -->
     <script defer src="Index.js"></script>
     <link href="EstilosIndex.css" rel="stylesheet">
+
+
 </head>
 
 <body>
@@ -24,9 +26,12 @@
   <div class="barra-navegacion-contenedor">
     <nav class="barra-navegacion-menu" role="navigation" aria-label="Menú principal">
       <a href="#carruselEncabezado" class="barra-navegacion-logo" aria-label="Ir al inicio">
-        <h1 class="barra-navegacion-titulo">
-          <span class="barra-navegacion-titulo-destacado">Santander Explorer</span>
-        </h1>
+            <h1 class="barra-navegacion-titulo">
+            <span class="barra-navegacion-titulo-destacado">
+                <img src="logo.jpg" alt="Santander Explorer Logo">
+            </span>
+            <span class="barra-navegacion-nombre">Sabores y<br> senderos santander</span>
+            </h1>
       </a>
       <button class="MenuDeslegable" type="button" aria-controls="barraNavegacionColapso" aria-expanded="false" aria-label="Mostrar menú">
         <i class="fa-solid fa-bars fa-xl" aria-hidden="true"></i>
@@ -35,7 +40,8 @@
         <div class="barra-navegacion-lista">
           <a href="#carruselEncabezado" class="barra-navegacion-item">Inicio</a>
           <a href="#seccion-sobre" class="barra-navegacion-item">Sobre Nosotros</a>
-          <a href="#servicios-inicio" class="barra-navegacion-item">Servicios</a>
+          <a href="#Hospedajes" class="barra-navegacion-item">Hospedajes</a>
+          <a href="#infraestructura" class="barra-navegacion-item">infraestructura</a>
           <a href="#paquetes-inicio" class="barra-navegacion-item">Paquetes Turísticos</a>
           <a href="#Registro" class="barra-navegacion-item">Contacto</a>
         </div>
@@ -53,9 +59,7 @@
                 <img class="carrusel-img" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/a6/8c/67/la-mesa-de-los-santos.jpg?w=1000&h=-1&s=1" alt="Imagen">
                 <div class="carrusel-caption">
                     <div class="carrusel-caption-contenido">
-                        <h4 class="carrusel-subtitulo">Tours & Viajes</h4>
-                        <h1 class="carrusel-titulo">Descubramos la mesa de los santos juntos</h1>
-                        <a href="" class="btn btn-principal">Reservar Ahora</a>
+                        <h1 class="carrusel-titulo">Descubramos <br> la mesa de los santos juntos</h1>
                     </div>
                 </div>
             </div>
@@ -63,9 +67,7 @@
                 <img class="carrusel-img" src="https://i.postimg.cc/L891p2mx/Mesa2.jpg" alt="Imagen">
                 <div class="carrusel-caption">
                     <div class="carrusel-caption-contenido">
-                        <h4 class="carrusel-subtitulo">Tours & Viajes</h4>
                         <h1 class="carrusel-titulo">Descubre lugares increíbles <br> con nosotros</h1>
-                        <a href="" class="btn btn-principal">Reservar Ahora</a>
                     </div>
                 </div>
             </div>
@@ -74,9 +76,7 @@
                   <img class="carrusel-img" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/d2/34/70/img-20180720-064648650.jpg?w=1000&h=-1&s=1" alt="Imagen">
                 <div class="carrusel-caption">
                     <div class="carrusel-caption-contenido">
-                        <h4 class="carrusel-subtitulo">Tours & Viajes</h4>
-                        <h1 class="carrusel-titulo">Descubre lugares increíbles<br> con nosotros</h1>
-                        <a href="" class="btn btn-principal">Reservar Ahora</a>
+                        <h1 class="carrusel-titulo">Vive la magia de Santander<br> en la Mesa de los Santos</h1>
                     </div>
                 </div>
             </div>
@@ -96,67 +96,40 @@
 </div>
 <!-- Carrusel Fin -->
 
-
 <!-- Sobre Inicio -->
 <div class="seccion-sobre" id="seccion-sobre">
     <div class="sobre-contenedor">
         <div class="sobre-fila">
-            <div class="sobre-imagen">
-                <img id="imagenSobre" class="sobre-img" src="https://i.postimg.cc/kXFbzBPV/Mesa1.jpg" alt="Sobre La Mesa de los Santos">
-            </div>
             <div class="sobre-info">
                 <div class="sobre-info-contenido">
-                    <h6 class="sobre-subtitulo">Conócenos</h6>
+                    <h6 class="sobre-subtitulo">Acerca de nosotros</h6>
                     <h1 class="sobre-titulo">Descubre la magia de La Mesa de los Santos</h1>
+                    
                     <p class="sobre-descripcion">
-                        En nuestra agencia, nos apasiona conectar a las personas con los lugares más hermosos de Colombia. <br>
-                        La Mesa de los Santos es un paraíso natural que combina paisajes montañosos, actividades de aventura y una rica herencia cultural. <br>
-                        Te ofrecemos experiencias inolvidables con paquetes turísticos personalizados, cómodos y accesibles.
+                        <strong>Introducción:</strong><br>
+                        La Mesa de los Santos, en Santander, es un destino donde la gastronomía, los paisajes y la tradición agrícola se unen para ofrecer una experiencia cultural única. Aquí podrás descubrir sabores autóctonos, participar en talleres y explorar maravillas naturales como el Cañón del Chicamocha.
                     </p>
-                    <a href="#registro" class="btn-principal">Reserva tu Aventura</a>
+                    
+                    <div class="sobre-mision-vision">
+                        <div class="sobre-mision">
+                            <h5 class="sobre-mision-titulo">Misión</h5>
+                            <p>
+                                Ofrecer experiencias que integren gastronomía y turismo, promoviendo la cultura y los sabores locales. Buscamos conectar a los visitantes con la identidad de La Mesa de los Santos y generar valor para turistas y comunidades, impulsando el desarrollo sostenible de la región.
+                            </p>
+                        </div>
+                        <div class="sobre-vision">
+                            <h5 class="sobre-vision-titulo">Visión</h5>
+                            <p>
+                                Ser reconocidos a nivel nacional e internacional como la empresa líder en rutas gastronómicas en Santander, destacándonos por la calidad de nuestras experiencias, el compromiso con las comunidades rurales y la promoción de la cultura colombiana a través de sus sabores. 
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
 <!-- Sobre Fin -->
-
-
-
-<!-- Características Inicio -->
-<div class="seccion-caracteristicas">
-    <div class="caracteristicas-contenedor">
-        <div class="caracteristicas-fila">
-            <div class="caracteristica">
-                <div class="caracteristica-icono">
-                    <i class="fa fa-2x fa-money-check-alt"></i>
-                </div>
-                <div class="caracteristica-info">
-                    <h5>Precios Competitivos</h5>
-                    <p>Accede a tarifas preferenciales y condiciones especiales diseñadas especialmente para ti.</p>
-                </div>
-            </div>
-            <div class="caracteristica">
-                <div class="caracteristica-icono">
-                    <i class="fa fa-2x fa-award"></i>
-                </div>
-                <div class="caracteristica-info">
-                    <h5>Red de Apoyo Experta</h5>
-                    <p>Benefíciate de la experiencia y el conocimiento de una red global de asesores.</p>
-                </div>
-            </div>
-            <div class="caracteristica">
-                <div class="caracteristica-icono">
-                    <i class="fa fa-2x fa-globe"></i>
-                </div>
-                <div class="caracteristica-info">
-                    <h5>Conexión Con Santander</h5>
-                    <p>Descubre destinos fascinantes y experiencias inolvidables alrededor de santander con nuestro respaldo.</p>                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Características Fin -->
 
 
 <!-- Destinos Inicio -->
@@ -192,42 +165,6 @@
     </div>
 </div>
 <!-- Destinos Fin -->
-
-
-<!-- Servicios Inicio -->
-<div class="contenedorFluido" id="servicios-inicio">
-    <div class="contenedor">
-        <div class="textoCentro">
-            <h6 class="textoPrimario" style="letter-spacing: 5px;">Servicios</h6>
-            <h1>Tours & Servicios de Viaje</h1>
-        </div>
-        <div class="fila">
-            <div class="columnaServicio">
-                <div class="itemServicio">
-                    <i class="fa fa-2x fa-route iconoRuta"></i> 
-                    <h5 class="tituloServicio">Guía de Viaje Experto</h5>
-                    <p class="textoServicio">Nuestros guías locales te acompañarán en cada aventura, revelándote los secretos y la riqueza cultural de Santander.</p>
-                </div>
-            </div>
-            <div class="columnaServicio">
-                <div class="itemServicio">
-                    <i class="fa fa-2x fa-ticket-alt iconoBoletos"></i>
-                    <h5 class="tituloServicio">Reserva de Actividades y Entradas</h5>
-                    <p class="textoServicio">Olvídate de las filas. Gestionamos tus entradas a parques, teleféricos y actividades de aventura para que solo disfrutes.</p>
-                </div>
-            </div>
-            <div class="columnaServicio">
-                <div class="itemServicio">
-                    <i class="fa fa-2x fa-hotel iconoHotel"></i>
-                    <h5 class="tituloServicio">Reserva de Alojamiento</h5>
-                    <p class="textoServicio">Encuentra el lugar perfecto para descansar, desde acogedoras cabañas hasta hoteles con encanto, adaptados a tu estilo y presupuesto.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Servicios Fin -->
-
 
 
 <!-- Paquetes Inicio -->
@@ -352,51 +289,40 @@
 <!-- Registro Fin -->
 
 
-
-<!-- Hoteles en la Mesa de los Santos -->
-<div class="contenedorFluido">
+<!-- seccion hoteles -->
+<!-- Hoteles -->
+<div class="contenedorFluido" id="Hospedajes">
     <div class="contenedor">
         <div class="textoCentro">
             <h6 class="textoPrimario" style="letter-spacing: 5px;">Hoteles</h6>
-            <h1>Hoteles Disponibles en la Mesa de los Santos</h1>
+            <h1>Hoteles en la Mesa de los Santos</h1>
             <p class="textoSecundario">Encuentra los mejores hoteles para tu estadía en la Mesa de los Santos, rodeados de naturaleza y confort.</p>
         </div>
         <div class="filaPaquetes">
             <div class="columnaPaquete">
                 <div class="itemPaquete">
-                    <img class="imagenPaquete" src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqMJFU_8PwBk7aZ1ZM7KezjFd2NFC56AZTB8LtKLxwehUpS875ypxfSraPf81KsOHw3lfnCp8C8eUhoQtfQDVYjZ0rKVVAwGo79ELkDeG-ZsklHNNg8fVyEnEZf-bgNhr0rz8-N=s680-w680-h510-rw" alt="Hotel Cabañas del Sol">
+                    <img class="imagenPaquete" src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/520142631.jpg?k=8f4c4f6ca9945d7517318c0cfc706b14b26e76101f79d10c60f77171fde6b47d&o=&hp=1" alt="Hotel Santa Clara">
                     <div class="contenidoPaquete">
-                        <h5 class="tituloPaquete">Hotel Cabañas del Sol</h5>
-                        <p>Disfruta de cómodas cabañas con vista al cañón, piscina y senderos ecológicos.</p>
+                        <h5 class="tituloPaquete">Hotel Santa Clara</h5>
+                        <p>Disfruta de cómodas habitaciones con vista al cañón, piscina y senderos ecológicos.</p>
                         <div class="precioValoracion">
                             <h6 class="valoracion"><i class="iconoEstrella"></i>4.7 <small>(120)</small></h6>
                             <h5 class="precio">$250.000/noche</h5>
+                            <a href="https://maps.app.goo.gl/Ro3kbCDQvrkqYArY9"><i class="fa-solid fa-map-location-dot fa-xl"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="columnaPaquete">
                 <div class="itemPaquete">
-                    <img class="imagenPaquete" src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/520142631.jpg?k=8f4c4f6ca9945d7517318c0cfc706b14b26e76101f79d10c60f77171fde6b47d&o=&hp=1" alt="Hotel Mesa Real">
+                    <img class="imagenPaquete" src="https://scontent.fbga1-3.fna.fbcdn.net/v/t39.30808-6/481215101_968131445408341_4155644237566900457_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=PYxhc3-8fmwQ7kNvwFhei3D&_nc_oc=Adlw5C4Nub9Eh0L9fJqdmCWFBzz-nxHUFxxV0-SNZIFo-sZxs27ZSUGGCeOj5jIvCJU&_nc_zt=23&_nc_ht=scontent.fbga1-3.fna&_nc_gid=da0mo8gTgW4CaSHLkTegUQ&oh=00_AfLrXPTKQPQd60rbGDDTdm_bQzsmVC9WKCrChA8gI4208A&oe=683A8F3B" alt="Hotel El Fique">
                     <div class="contenidoPaquete">
-                        <h5 class="tituloPaquete">Hotel Mesa Real</h5>
+                        <h5 class="tituloPaquete">Hotel El Fique</h5>
                         <p>Habitaciones modernas, restaurante propio y fácil acceso a los principales atractivos turísticos.</p>
                         <div class="precioValoracion">
                             <h6 class="valoracion"><i class="iconoEstrella"></i>4.8 <small>(98)</small></h6>
                             <h5 class="precio">$320.000/noche</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="columnaPaquete">
-                <div class="itemPaquete">
-                    <img class="imagenPaquete" src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/336253274.jpg?k=37e774a0babee0539ae32de70ee5d41ba6da2b295d41260db89622e8eddf812b&o=&hp=1" alt="EcoHotel La Montaña">
-                    <div class="contenidoPaquete">
-                        <h5 class="tituloPaquete">EcoHotel La Montaña</h5>
-                        <p>Vive una experiencia ecológica con habitaciones tipo glamping y actividades al aire libre.</p>
-                        <div class="precioValoracion">
-                            <h6 class="valoracion"><i class="iconoEstrella"></i>4.9 <small>(75)</small></h6>
-                            <h5 class="precio">$280.000/noche</h5>
+                            <a href=" https://maps.app.goo.gl/QF1Y6kpF1sgieeRX6"><i class="fa-solid fa-map-location-dot fa-xl"></i></a>
                         </div>
                     </div>
                 </div>
@@ -405,11 +331,128 @@
     </div>
 </div>
 
+<!-- Hostales y Cabañas -->
+<div class="contenedorFluido">
+    <div class="contenedor">
+        <div class="textoCentro">
+            <h6 class="textoPrimario" style="letter-spacing: 5px;">Hostales y Cabañas</h6>
+            <h1>Hostales y Cabañas en la Mesa de los Santos</h1>
+            <p class="textoSecundario">Hospédate en hostales con ambiente familiar o en cabañas rodeadas de naturaleza.</p>
+        </div>
+        <div class="filaPaquetes">
+            <!-- Hostales -->
+            <div class="columnaPaquete">
+                <div class="itemPaquete">
+                    <img class="imagenPaquete" src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrto3mqmHjL4xjaqejs7CJivctK6AEJvQJYtvFDNK3znS-CSeDJc7-_KYjTUpnIM8oBpowx3utJL_SYhPJzxqV6c8hAl7p2zChU6Z2ZdaeWpFJiuyWl5dpfZjZbpZLdbBgjxIni=s680-w680-h510-rw" alt="Hostal Boutique La Torre">
+                    <div class="contenidoPaquete">
+                        <h5 class="tituloPaquete">Hostal Boutique La Torre</h5>
+                        <p>Hostal con ambiente familiar, desayuno incluido y excelente ubicación.</p>
+                        <div class="precioValoracion">
+                            <h6 class="valoracion"><i class="iconoEstrella"></i>4.6 <small>(38)</small></h6>
+                            <h5 class="precio">$90.000/noche</h5>
+                            <a href="https://maps.app.goo.gl/7x4PMSZNSR987QcY7"><i class="fa-solid fa-map-location-dot fa-xl"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columnaPaquete">
+                <div class="itemPaquete">
+                    <img class="imagenPaquete" src="https://lh3.googleusercontent.com/p/AF1QipOmQkt5YOL-htMf7Kf-knPZ2oW5hFhlUIx_Vcjf=s680-w680-h510-rw" alt="Hostal Juan Palitos">
+                    <div class="contenidoPaquete">
+                        <h5 class="tituloPaquete">Hostal Juan Palitos</h5>
+                        <p>Ambiente juvenil, zonas verdes y actividades grupales para mochileros y viajeros.</p>
+                        <div class="precioValoracion">
+                            <h6 class="valoracion"><i class="iconoEstrella"></i>4.4 <small>(22)</small></h6>
+                            <h5 class="precio">$70.000/noche</h5>
+                            <a href="https://maps.app.goo.gl/oaHCeXuxrVyMrYAu5"><i class="fa-solid fa-map-location-dot fa-xl"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Cabañas -->
+            <div class="columnaPaquete">
+                <div class="itemPaquete">
+                    <img class="imagenPaquete" src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/369684033.jpg?k=f49ae59c82102c1b1488c27e7f7bf1cb8cc4a6bf7432d845c768d0d1801282d6&o=&hp=1" alt="Bonanza Hotel y Cabañas">
+                    <div class="contenidoPaquete">
+                        <h5 class="tituloPaquete">Bonanza Hotel y Cabañas</h5>
+                        <p>Cabañas familiares rodeadas de naturaleza, con zona de juegos y restaurante campestre.</p>
+                        <div class="precioValoracion">
+                            <h6 class="valoracion"><i class="iconoEstrella"></i>4.5 <small>(60)</small></h6>
+                            <h5 class="precio">$180.000/noche</h5>
+                            <a href="https://maps.app.goo.gl/t9kmeURQHEcejt8w7"><i class="fa-solid fa-map-location-dot fa-xl"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columnaPaquete">
+                <div class="itemPaquete">
+                    <img class="imagenPaquete" src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/148024980.jpg?k=3216da053497eb36dc8cb4847b330aead5cd3b1137400d3c1490e6841b468aeb&o=&hp=1" alt="Cabaña La Carolina">
+                    <div class="contenidoPaquete">
+                        <h5 class="tituloPaquete">Cabaña La Carolina</h5>
+                        <p>Cabaña privada con todas las comodidades y una vista espectacular al paisaje santandereano.</p>
+                        <div class="precioValoracion">
+                            <h6 class="valoracion"><i class="iconoEstrella"></i>4.7 <small>(42)</small></h6>
+                            <h5 class="precio">$210.000/noche</h5>
+                            <a href="https://maps.app.goo.gl/t9kmeURQHEcejt8w7"><i class="fa-solid fa-map-location-dot fa-xl"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Camping y Glamping -->
+<div class="contenedorFluido">
+    <div class="contenedor">
+        <div class="textoCentro">
+            <h6 class="textoPrimario" style="letter-spacing: 5px;">Camping y Glamping</h6>
+            <h1>Camping, Glamping y Refugio</h1>
+            <p class="textoSecundario">Vive la naturaleza con comodidad y aventura en la Mesa de los Santos.</p>
+        </div>
+        <div class="filaPaquetes">
+            <!-- Glamping -->
+            <div class="columnaPaquete">
+                <div class="itemPaquete">
+                    <img class="imagenPaquete" src="https://www.fincacampestrelasbrisas.com/wp-content/uploads/2021/08/Jacuzzi-3-1140x590-1.jpg" alt="Glamping Finca Campestre Las Brisas">
+                    <div class="contenidoPaquete">
+                        <h5 class="tituloPaquete">Glamping Finca Campestre Las Brisas</h5>
+                        <p>Disfruta de una experiencia de lujo en la naturaleza con domos y carpas equipadas.</p>
+                        <div class="precioValoracion">
+                            <h6 class="valoracion"><i class="iconoEstrella"></i>4.9 <small>(60)</small></h6>
+                            <h5 class="precio">$350.000/noche</h5>
+                            <a href="https://maps.app.goo.gl/8W1YP7XwsVVWb5U66"><i class="fa-solid fa-map-location-dot fa-xl"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Camping / Refugio -->
+            <div class="columnaPaquete">
+                <div class="itemPaquete">
+                    <img class="imagenPaquete" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/74/5d/8d/refugio-la-roca.jpg?w=700&h=-1&s=1" alt="Refugio La Roca">
+                    <div class="contenidoPaquete">
+                        <h5 class="tituloPaquete">Refugio La Roca</h5>
+                        <p>Zona de camping segura, rodeada de naturaleza, ideal para aventureros y familias.</p>
+                        <div class="precioValoracion">
+                            <h6 class="valoracion"><i class="iconoEstrella"></i>4.5 <small>(40)</small></h6>
+                            <h5 class="precio">$40.000/noche</h5>
+                            <a href="https://maps.app.goo.gl/k2EtzzVcCFRXbyzU7"><i class="fa-solid fa-map-location-dot fa-xl"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- fin de la seccion de hoteles -->
+
+
 <!-- Restaurantes en la Mesa de los Santos -->
 <div class="contenedorFluido">
     <div class="contenedor">
         <div class="textoCentro">
-            <h6 class="textoPrimario" style="letter-spacing: 5px;">Restaurantes</h6>
+            <h6 class="textoPrimario" >Restaurantes</h6>
             <h1>Restaurantes en la Mesa de los Santos</h1>
             <p class="textoSecundario">Descubre la mejor gastronomía local y nacional en los restaurantes de la Mesa de los Santos.</p>
         </div>
@@ -420,35 +463,62 @@
                     <div class="contenidoPaquete">
                         <h5 class="tituloPaquete">Aborigenes restaurante</h5>
                         <p>Especialidad en carnes a la brasa y platos típicos santandereanos con una vista espectacular.</p>
-                        <div class="precioValoracion">
-                            <h6 class="valoracion"><i class="iconoEstrella"></i>4.6 <small>(210)</small></h6>
-                            <h5 class="precio">$$</h5>
+                        <div class="precioValoracion2">
+
+                            <a href="www.instagram.com/aborigenesrestaurante?igsh=MXRvM25oZDN5ZWNpaQ=="><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                            <a href="https://maps.app.goo.gl/9A4syRr1dsM4i5pK9?g_st=com.google.maps.preview.copy "><i class="fa-solid fa-map-location-dot fa-xl"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="columnaPaquete">
                 <div class="itemPaquete">
-                    <img class="imagenPaquete" src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nphwoMOJ5zJtVk8pQMcPRjcsm9WEfP5x8q6Y1V5NfEexmuZzP_2OY1VzZfQgQrre95KQESKd2F6HEFHzoXwPHzzJ0c1DqVRg9E6M9Fle3K_IkjLI-aAXFqn-nsAkudyuVAPF3Ya=s680-w680-h510-rw" alt="Café Mesa Verde">
+                    <img class="imagenPaquete" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/42/b9/ba/caption.jpg?w=1000&h=-1&s=1" alt="Café Mesa Verde">
                     <div class="contenidoPaquete">
-                        <h5 class="tituloPaquete">El granero café</h5>
+                        <h5 class="tituloPaquete">Nicolas gastronomia</h5>
                         <p>Café orgánico, postres caseros y desayunos típicos en un ambiente campestre y acogedor.</p>
-                        <div class="precioValoracion">
-                            <h6 class="valoracion"><i class="iconoEstrella"></i>4.8 <small>(150)</small></h6>
-                            <h5 class="precio">$</h5>
+                        <div class="precioValoracion2">
+                            <a href="https://www.instagram.com/nicolas_lossantos?igsh=MWdnMzhkcnlxMDZ5cw== "><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                            <a href="maps.app.goo.gl/W7d9zTHCP4gSDTJDA?g_st=com.google.maps.preview.copy  "><i class="fa-solid fa-map-location-dot fa-xl"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="columnaPaquete">
                 <div class="itemPaquete">
-                    <img class="imagenPaquete" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/27/ab/85/cb/para-picar-restaurante.jpg?w=1000&h=-1&s=1" alt="La Trucha Dorada">
+                    <img class="imagenPaquete" src="https://lh3.googleusercontent.com/p/AF1QipNtxDKiOjvMYafMjY-ytcKgsmE0ahfKKEZFpprg=s680-w680-h510-rw" alt="La Trucha Dorada">
                     <div class="contenidoPaquete">
-                        <h5 class="tituloPaquete"> Para Picar Restaurante</h5>
+                        <h5 class="tituloPaquete">Margarita pizza delivery</h5>
                         <p>carnes a la brasa y platos típicos santandereanos con un toque artesanal.</p>
-                        <div class="precioValoracion">
-                            <h6 class="valoracion"><i class="iconoEstrella"></i>4.7 <small>(180)</small></h6>
-                            <h5 class="precio">$$$</h5>
+                        <div class="precioValoracion2">
+                            <a href="https://www.instagram.com/margarita.pizzadelivery?igsh=d25tbXBlYXphYXB1"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                            <a href="https://maps.app.goo.gl/DkQddc6ngSazx7UB9?g_st=com.google.maps.preview.copy"><i class="fa-solid fa-map-location-dot fa-xl"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columnaPaquete">
+                <div class="itemPaquete">
+                    <img class="imagenPaquete" src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4npFE9fJ7FVNWLTpMJSqSx9TjLo36O20ZtvE1pmWNE0usopRSTdf5Y-SixJDFgwelxw5pMf8pGKbL3T2BDCBce6orDe9dcJLUJtaqEsxKwVfILv2RYbWbivuPlVtXvk6gZy9PCtn=s680-w680-h510-rw" alt="La Trucha Dorada">
+                    <div class="contenidoPaquete">
+                        <h5 class="tituloPaquete">Cervecería bier von eder</h5>
+                        <p>carnes a la brasa y platos típicos santandereanos con un toque artesanal.</p>
+                        <div class="precioValoracion2">
+                            <a href="www.instagram.com/artesanal_voneder?igsh=NjZmYTEyanFkMmw="><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                            <a href="maps.app.goo.gl/yUMoY3rmwHf5oMEt9?g_st=com.google.maps.preview.copy"><i class="fa-solid fa-map-location-dot fa-xl"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columnaPaquete">
+                <div class="itemPaquete">
+                    <img class="imagenPaquete" src="https://lh3.googleusercontent.com/p/AF1QipPXFdrct7MxFNerWHH--9XNKrESiqpvCL50pbya=s680-w680-h510-rw" alt="La Trucha Dorada">
+                    <div class="contenidoPaquete">
+                        <h5 class="tituloPaquete">Gelatino</h5>
+                        <p>carnes a la brasa y platos típicos santandereanos con un toque artesanal.</p>
+                        <div class="precioValoracion2">
+                            <a href="https://www.instagram.com/heladeriagelatino?igsh=d2xoamNoZDRoOHJm"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                            <a href="https://maps.app.goo.gl/qNS2uEXAagZie9Fi9?g_st=com.google.maps.preview.copy"><i class="fa-solid fa-map-location-dot fa-xl"></i></a>
                         </div>
                     </div>
                 </div>
@@ -457,58 +527,198 @@
     </div>
 </div>
 
-<!-- Talleres de Cocina en la Mesa de los Santos -->
-<div class="contenedorFluido">
+
+<!-- Infraestructura, Rutas, Transporte, Vida Nocturna, Ecoturismo, Actividades Cercanas -->
+<div class="contenedorFluido" id="infraestructura">
     <div class="contenedor">
         <div class="textoCentro">
-            <h6 class="textoPrimario" style="letter-spacing: 5px;">Talleres</h6>
-            <h1>Talleres de Cocina en la Mesa de los Santos</h1>
-            <p class="textoSecundario">Aprende a preparar platos típicos santandereanos con chefs locales en talleres prácticos y divertidos.</p>
+            <h6 class="textoPrimario" style="letter-spacing: 5px;">Infraestructura</h6>
+            <h1>Infraestructura en la Mesa de los Santos</h1>
+            <p class="textoSecundario">Conoce los servicios, vías, hospitales y facilidades disponibles para los visitantes.</p>
         </div>
-        <div class="filaPaquetes">
-            <div class="columnaPaquete">
-                <div class="itemPaquete">
-                    <img class="imagenPaquete" src="https://i.ytimg.com/vi/IF1kMxzyMsU/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDg2EgCBTrRsl1IyGbxieKdp3Otrw" alt="Taller de Arepas de Maíz Pelao">
-                    <div class="contenidoPaquete">
-                        <h5 class="tituloPaquete">Taller de Arepas de Maíz Pelao</h5>
-                        <p>Descubre el proceso tradicional y degusta tus propias arepas recién hechas.</p>
-                        <div class="precioValoracion">
-                            <h6 class="valoracion"><i class="iconoEstrella"></i>5.0 <small>(60)</small></h6>
-                            <h5 class="precio">$40.000</h5>
-                        </div>
+        <div class="fila-infraestructura">
+            <div class="carta-infra">
+                <div class="infra-img">
+                    <img src="https://i.postimg.cc/nLMWpGjC/Estaciondepolicia.png" alt="Vías de acceso pavimentadas">
+                    <span class="infra-icono"><i class="fa-solid fa-building-shield"></i></span>
+                </div>
+                <div class="infra-contenido">
+                    <h5 class="infra-titulo">ESTACION DE POLICIA EN LA MESA DE LOS SANTOS</h5>
+                    <p>Estacion de policia de la mesa de los santos.</p>
+                    <div class="infra-acciones">
+                        <a href="https://www.google.com/maps/place/Estaci%C3%B3n+de+Polic%C3%ADa+Mesa+de+los+Santos/data=!4m2!3m1!1s0x0:0xcaf770d4748a53ec?sa=X&ved=1t:2428&ictx=111" target="_blank"><i class="fa-solid fa-map-location-dot"></i></a>
                     </div>
                 </div>
             </div>
-            <div class="columnaPaquete">
-                <div class="itemPaquete">
-                    <img class="imagenPaquete" src="https://www.vanguardia.com/resizer/v2/bocadillo-veleno-FSTTLNWHE5CX5KD3M4KDKZT4ZM.jpeg?auth=49242feadf87c95433ae573e04dd2dca607c309ccb71e81518c5bb155516d45c&smart=true&width=1200&height=800&quality=70" alt="Taller de Postres Santandereanos">
-                    <div class="contenidoPaquete">
-                        <h5 class="tituloPaquete">Taller de Postres Santandereanos</h5>
-                        <p>Aprende a preparar bocadillo veleño, obleas y otros dulces típicos de la región.</p>
-                        <div class="precioValoracion">
-                            <h6 class="valoracion"><i class="iconoEstrella"></i>4.9 <small>(45)</small></h6>
-                            <h5 class="precio">$35.000</h5>
-                        </div>
+            <div class="carta-infra">
+                <div class="infra-img">
+                    <img src="https://scontent.fbga1-3.fna.fbcdn.net/v/t39.30808-6/494924266_2258897911196525_9139977786043267852_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=pC9s-JqYBLcQ7kNvwHGGQwB&_nc_oc=AdnT3EcU6I7w6uq6eXUM_GGpMpX51AdkHo5o7FBIUFewt8GAyZ7IBpaxz2FUPpeinSo&_nc_zt=23&_nc_ht=scontent.fbga1-3.fna&_nc_gid=o_RjlhpUegZy-40tqmUpjw&oh=00_AfJd6pIJLPh5a0LYck5hMwAHQw5yVqXMrJGWm3FO6nryCQ&oe=683AED46" alt="Servicios de salud">
+                    <span class="infra-icono"><i class="fa-solid fa-hospital"></i></span>
+                </div>
+                <div class="infra-contenido">
+                    <h5 class="infra-titulo">HOSPITAL NUESTRA SEÑORA DE LAS NIEVES</h5>
+                    <p>Puestos de salud y farmacias disponibles en el área.</p>
+                    <div class="infra-acciones">
+                        <a href="https://www.google.com/maps/place/ESE+HOSPITAL+NUESTRA+SE%C3%91ORA+DE+LAS+NIEVES/@6.7601416,-73.0969394,653m/data=!3m2!1e3!4b1!4m6!3m5!1s0x8e69cb0009b3d15f:0x8248c6e7fa39b255!8m2!3d6.7601416!4d-73.0969394!16s%2Fg%2F11y49dlwcs?entry=ttu&g_ep=EgoyMDI1MDUyMS4wIKXMDSoASAFQAw%3D%3D" target="_blank"><i class="fa-solid fa-map-location-dot"></i></a>
                     </div>
                 </div>
             </div>
-            <div class="columnaPaquete">
-                <div class="itemPaquete">
-                    <img class="imagenPaquete" src="https://img.freepik.com/fotos-premium/grupo-diverso-personas-cocinando-juntas-taller-espacio-copia-cocina-profesional_236854-35146.jpg" alt="Taller de Cocina Campesina">
-                    <div class="contenidoPaquete">
-                        <h5 class="tituloPaquete">Taller de Cocina Campesina</h5>
-                        <p>Vive la experiencia de cocinar con ingredientes frescos y recetas ancestrales de la Mesa de los Santos.</p>
-                        <div class="precioValoracion">
-                            <h6 class="valoracion"><i class="iconoEstrella"></i>5.0 <small>(38)</small></h6>
-                            <h5 class="precio">$50.000</h5>
-                        </div>
+            <div class="carta-infra">
+                <div class="infra-img">
+                    <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nob_kVmsMI4E-vdDZ6ecfLI8fNjDHU654sbMUdrhENxuvKo3pyVjRGUyzcHLMoIAiLlW6MDW9WKsUS0WzlCJH3UoKPaiop6FF2MhF1hDGbDLhFQbrbjs_BGgNPkEUlEM0XFinh1=s680-w680-h510-rw" alt="Zonas WiFi y cajeros">
+                    <span class="infra-icono"><i class="fa-solid fa-store"></i></i></span>
+                </div>
+                <div class="infra-contenido">
+                    <h5 class="infra-titulo">D1 Mercado Campesino</h5>
+                    <p>Supermercado disponible en la zona de la plaza de mercado campesino.</p>
+                    <div class="infra-acciones">
+                        <a href="https://www.google.com/maps/dir/Bucaramanga,+Santander/D1+Mercado+Campesino,+Los+Santos,+Santander/@6.9548883,-73.2203072,41760m/data=!3m1!1e3!4m13!4m12!1m5!1m1!1s0x8e68157af751c0ed:0x75a0e4551148c36c!2m2!1d-73.1227416!2d7.119349!1m5!1m1!1s0x8e684bfe420691bf:0xc2eee4ad0a08cb71!2m2!1d-73.0649666!2d6.854266?entry=ttu&g_ep=EgoyMDI1MDUyMS4wIKXMDSoASAFQAw%3D%3D" target="_blank"><i class="fa-solid fa-map-location-dot"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!-- Fin de Talleres de Cocina -->
+
+
+
+<!-- Vida Nocturna -->
+<div class="contenedorFluido" id="vida-nocturna">
+    <div class="contenedor">
+        <div class="textoCentro">
+            <h6 class="textoPrimario" style="letter-spacing: 5px;">Vida Nocturna</h6>
+            <h1>Disfruta la noche en la Mesa de los Santos</h1>
+            <p class="textoSecundario">Bares, cafés y actividades para disfrutar después del atardecer.</p>
+        </div>
+        <div class="fila-infraestructura">
+            <div class="carta-infra">
+                <div class="infra-img">
+                    <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nr_XnnLVdPT5Dvvt_DxT99VW9SzHlZNTkZSQ-L3NEOKwji3Rgpp31WwjJEZ7bBS3t5A2-mT5rnI9Fech76OT2GZJ88fqAfOWvqMW-6aj3KwHB7AlhSIP1eHKPlxClvP3xKr1qw=s680-w680-h510-rw" alt="Bares con música en vivo">
+                    <span class="infra-icono"><i class="fa-solid fa-music"></i></span>
+                </div>
+                <div class="infra-contenido">
+                    <h5 class="infra-titulo">Juan cervezas Cocktails</h5>
+                    <p>Ambiente festivo y shows en directo para todos los gustos.</p>
+                    <div class="infra-acciones">
+                        <a href="https://www.google.com/maps/dir/Bucaramanga,+Santander/Zona+Artesanal,+Mesa+de,+Local+2,+Los+Santos,+Santander/@6.9374865,-73.4075159,83523m/data=!3m2!1e3!4b1!4m13!4m12!1m5!1m1!1s0x8e68157af751c0ed:0x75a0e4551148c36c!2m2!1d-73.1227416!2d7.119349!1m5!1m1!1s0x8e69cb83f706ed2f:0x6c358be1b8af06d5!2m2!1d-73.1023525!2d6.7557663?entry=ttu&g_ep=EgoyMDI1MDUyMS4wIKXMDSoASAFQAw%3D%3D" target="_blank"><i class="fa-solid fa-map-location-dot"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="carta-infra">
+                <div class="infra-img">
+                    <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4noEGL-bpxPrFXlN19wE9wk8AeF0Q0P9f2D04PEWcLRBsgkoUmOqg7Hrt_fyt3kQtzO3Z1brA9T1Dq4Zhop1ZVJGWaT5qgEqWxCUpwl1SG45IcLcxe6-0zyWuy0WHgTOftfcrlQJ=s680-w680-h510-rw" alt="Cafés y terrazas">
+                    <span class="infra-icono"><i class="fa-solid fa-mug-hot"></i></span>
+                </div>
+                <div class="infra-contenido">
+                    <h5 class="infra-titulo">Bonanza Restaurante Bar</h5>
+                    <p>Disfruta de un café o bebida de la mejor calidad.</p>
+                    <div class="infra-acciones">
+                        <a href="https://www.google.com/maps/dir/Bucaramanga,+Santander/Via+nueva+Mesa+de+Los+Santos,+Mercado+Campesino,+Pan-American+Hwy,+Piedecuesta,+Santander/@7.0009249,-73.2426429,41756m/data=!3m2!1e3!4b1!4m13!4m12!1m5!1m1!1s0x8e68157af751c0ed:0x75a0e4551148c36c!2m2!1d-73.1227416!2d7.119349!1m5!1m1!1s0x8e684990892fd8c3:0xec2bcd0d8999e108!2m2!1d-73.0532132!2d6.8835082?entry=ttu&g_ep=EgoyMDI1MDUyMS4wIKXMDSoASAFQAw%3D%3D" target="_blank"><i class="fa-solid fa-map-location-dot"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="carta-infra">
+                <div class="infra-img">
+                    <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqn-FjNZr-FrwlkVsk6IRlMhc8fCXlf9lFPGOgqlkngXvdsms23nbZ9O9Z89EnP6-BSywVEJPdFqh2ItmxEf3dty9nCcsXPVhH9-BoYDADmRdMzZgq6bplRvAhzynL8ArilMEAOAg=s680-w680-h510-rw">
+                    <span class="infra-icono"><i class="fa-solid fa-fire"></i></span>
+                </div>
+                <div class="infra-contenido">
+                    <h5 class="infra-titulo">Bar Bacoos</h5>
+                    <p>Reúnete con amigos y disfruta de un buen ambiente.</p>
+                    <div class="infra-acciones">
+                        <a href="https://www.google.com/maps?rlz=1C1GCEU_esCO1160CO1161&sca_esv=4406cf6fd9018030&lqi=ChtiYXJlcyBsYSBtZXNhIGRlIGxvcyBzYW50b3NIo8-C7purgIAIWikQABgAGAUiG2JhcmVzIGxhIG1lc2EgZGUgbG9zIHNhbnRvcyoECAMQAJIBA2JhcpoBJENoZERTVWhOTUc5blMwVkpRMEZuU1VSbWJ6aFFSamxCUlJBQqoBThABKgkiBWJhcmVzKA4yHhABIhqDoTueHXakBhh5nz-vwwGe319TFabrJSiYBzIfEAIiG2JhcmVzIGxhIG1lc2EgZGUgbG9zIHNhbnRvc_oBBQiWARA-&phdesc=lavr6btpmQE&vet=12ahUKEwi-s-3L08KNAxUmfDABHbo4AgQQ8UF6BAgEEF0..i&lei=Fio1aL7QNKb4wbkPuvGIIA&cs=1&um=1&ie=UTF-8&fb=1&gl=co&sa=X&geocode=KT3T3aQVSmiOMfvGcQGA4Lfx&daddr=Los+Santos,+Santander" target="_blank"><i class="fa-solid fa-map-location-dot"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Actividades Cerca de la Mesa -->
+<div class="contenedorFluido" id="actividades-cerca">
+    <div class="contenedor">
+        <div class="textoCentro">
+            <h6 class="textoPrimario" style="letter-spacing: 5px;">Cerca de la Mesa</h6>
+            <h1>Actividades y Lugares Cercanos</h1>
+            <p class="textoSecundario">Explora otros destinos y actividades a pocos minutos de la Mesa de los Santos.</p>
+        </div>
+        <div class="fila-infraestructura">
+            <div class="carta-infra">
+                <div class="infra-img">
+                    <img src="https://parquesdesantander.com/wp-content/uploads/2022/02/img-parque-nacional-del-chicamocha-home-768x512.jpg" alt="Panachi">
+                    <span class="infra-icono"><i class="fa-solid fa-mountain-sun"></i></span>
+                </div>
+                <div class="infra-contenido">
+                    <h5 class="infra-titulo">Parque Nacional Chicamocha (Panachi)</h5>
+                    <p>Visita el parque más emblemático de la región.</p>
+                    <div class="infra-acciones">
+                        <a href="https://www.google.com/maps/dir/Bucaramanga,+Santander/Parque+Nacional+del+Chicamocha,+Aratoca,+Santander/@6.9548883,-73.2203072,41760m/data=!3m2!1e3!4b1!4m13!4m12!1m5!1m1!1s0x8e68157af751c0ed:0x75a0e4551148c36c!2m2!1d-73.1227416!2d7.119349!1m5!1m1!1s0x8e683fda55f3b115:0xec2d8bba51c9b135!2m2!1d-73.0034994!2d6.7901528?entry=ttu&g_ep=EgoyMDI1MDUyMS4wIKXMDSoASAFQAw%3D%3D" target="_blank"><i class="fa-solid fa-map-location-dot"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="carta-infra">
+                <div class="infra-img">
+                    <img src="https://assets.turismocity.com/cdn-cgi/image/format=auto,width=scale-down,height=1400,scale-down=cover/img/blog/mi%20querida%20colombia.png" alt="Tour a Barichara y San Gil">
+                    <span class="infra-icono"><i class="fa-solid fa-route"></i></span>
+                </div>
+                <div class="infra-contenido">
+                    <h5 class="infra-titulo"> Centro Cultural Mi Colombia Querida</h5>
+                    <p>Descubre pueblos coloniales y actividades extremas.</p>
+                    <div class="infra-acciones">
+                        <a href="https://www.google.com/maps/dir/Bucaramanga,+Santander/Centro+Cultural+Mi+Colombia+Querida/@6.9579851,-73.1487374,20880m/data=!3m1!1e3!4m13!4m12!1m5!1m1!1s0x8e68157af751c0ed:0x75a0e4551148c36c!2m2!1d-73.1227416!2d7.119349!1m5!1m1!1s0x8e684a6e1378b3a5:0xf0d48ee7ad0d6207!2m2!1d-73.0750967!2d6.8444552?entry=ttu&g_ep=EgoyMDI1MDUyMS4wIKXMDSoASAFQAw%3D%3D" target="_blank"><i class="fa-solid fa-map-location-dot"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="carta-infra">
+                <div class="infra-img">
+                    <img src="https://assets.turismocity.com/cdn-cgi/image/format=auto,width=scale-down,height=1400,scale-down=cover/img/blog/MERCADO%20CAMPESINO%20.png">
+                    <span class="infra-icono"><i class="fa-solid fa-store"></i></span>
+                </div>
+                <div class="infra-contenido">
+                    <h5 class="infra-titulo">Mercado campesino de Los Santos</h5>
+                    <p>Productos frescos y artesanías locales.</p>
+                    <div class="infra-acciones">
+                        <a href="https://www.google.com/maps/dir/Bucaramanga,+Santander/Mesa+de+los+Santos,+V%C3%ADa+%23Km+38,+Piedecuesta,+Los+Santos,+Santander/@6.9868672,-73.2426429,41757m/data=!3m2!1e3!4b1!4m13!4m12!1m5!1m1!1s0x8e68157af751c0ed:0x75a0e4551148c36c!2m2!1d-73.1227416!2d7.119349!1m5!1m1!1s0x8e684b2d9e4a7c83:0x7c5f501545ff0a3c!2m2!1d-73.0658805!2d6.853276?entry=ttu&g_ep=EgoyMDI1MDUyMS4wIKXMDSoASAFQAw%3D%3D" target="_blank"><i class="fa-solid fa-map-location-dot"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- actividades fin -->
+
+<!-- Mapa Interactivo Inicio -->
+<div class="contenedorFluido">
+    <div class="contenedor">
+        <div class="textoCentro">
+            <h6 class="textoPrimario" style="letter-spacing: 5px;">Mapa Interactivo</h6>
+            <h1>Explora la Mesa de los Santos en el Mapa</h1>
+            <p class="textoSecundario">Ubica fácilmente los principales atractivos turísticos, restaurantes, alojamientos y servicios en la región.</p>
+        </div>
+        
+        <!-- Contenedor del mapa y botón -->
+        <div class="mapa-interactivo-contenedor" style="width:100%;max-width:900px;margin:0 auto;text-align:center;">
+            <!-- Mapa incrustado -->
+            <iframe 
+                src="https://www.google.com/maps/d/u/0/embed?mid=1M7ZjWmV_gdpeIQdXaxscYGEuNZcqdT0" 
+                width="100%" 
+                height="400" 
+                style="border-radius:16px; box-shadow:0 2px 16px rgba(30,48,83,0.10); border:none;" 
+                allowfullscreen>
+            </iframe>
+
+            <!-- Botón para abrir en nueva pestaña -->
+            <a href="https://www.google.com/maps/d/u/0/viewer?mid=1M7ZjWmV_gdpeIQdXaxscYGEuNZcqdT0&ll=6.921715936293979%2C-73.06332209999999&z=13" 
+               target="_blank" 
+               style="display:inline-block;margin-top:15px;padding:10px 20px;background-color:#007BFF;color:white;text-decoration:none;border-radius:8px;font-weight:bold;transition:background-color 0.3s ease;">
+                Ver mapa completo
+            </a>
+        </div>
+    </div>
+</div>
+<!-- Mapa Interactivo Fin -->
 
 
 <!-- Pie de página Inicio -->
@@ -517,16 +727,16 @@
         <div class="pie-fila">
             <div class="pie-columna">
                 <h5>Contacto</h5>
-                <p><i class="fa fa-map-marker-alt"></i> Calle 20 # 11-10, La Mesa de los Santos, Santander</p>
-                <p><i class="fa fa-phone-alt"></i> +57 310 123 4567</p>
-                <p><i class="fa fa-envelope"></i> info@santanderexplorer.com</p>
+                <p><i class="fa fa-phone-alt"></i> +57 311 2168450</p>
+                <p><i class="fa fa-envelope"></i>saboresysenderosrutasantader@gmail.com</p>
             </div>
             <div class="pie-columna">
                 <h5>Enlaces Rápidos</h5>
                 <ul>
                     <li><a href="#carruselEncabezado">Inicio</a></li>
                     <li><a href="#seccion-sobre">Sobre Nosotros</a></li>
-                    <li><a href="#servicios-inicio">Servicios</a></li>
+                    <li><a href="#Hospedajes">Hospedajes</a></li>
+                    <li><a href="#infraestructura">infraestructura</a></li>
                     <li><a href="#paquetes-inicio">Paquetes Turisticos</a></li>
                     <li><a href="#registro">Contacto</a></li>
                 </ul>
@@ -534,15 +744,12 @@
             <div class="pie-columna">
                 <h5>Redes Sociales</h5>
                 <div class="redes-sociales">
-                    <a href="#"><i class="fa-brands fa-facebook fa-2xl"></i></a>
-                    <a href="#"><i class="fa-brands fa-x-twitter fa-2xl"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram fa-2xl"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+                    <a href="https://www.instagram.com/saboresysenderos_santander?igsh=MXJxdTRrbDk5cjV4Yg=="><i class="fa-brands fa-instagram fa-2xl"></i></a>
                 </div>
             </div>
         </div>
         <div class="pie-fila-derechos">
-            <p>&copy; 2025 Santander Explorer. Todos los derechos reservados.</p>
+            <p>&copy; 2025 Sabores y senderos santander. Todos los derechos reservados.</p>
         </div>
     </div>
 </footer>

@@ -132,3 +132,29 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+function iniciarMap(){
+    var coord = {lat:-34.5956145 ,lng: -58.4431949};
+    var map = new google.maps.Map(document.getElementById('map'),{
+      zoom: 10,
+      center: coord
+    });
+    var marker = new google.maps.Marker({
+      position: coord,
+      map: map
+    });
+}
+
+
+// mapa interactivo
+function iniciarMap(){
+    var coord = {lat: 6.7813, lng: -73.0862};  // Coordenadas de la Mesa de los Santos
+    var map = new google.maps.Map(document.getElementById('mapa-interactivo'), {
+        zoom: 13,
+        center: coord
+    });
+    var marker = new google.maps.Marker({
+        position: coord,
+        map: map
+    });
+}

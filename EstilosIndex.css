@@ -115,7 +115,6 @@ body {
 }
 
 /* Barra Navegación */
-/* Base styles - apply to all screen sizes */
 .barra-navegacion {
   background-color: #0d3053; /* Example background */
   padding: 1rem 0;
@@ -138,13 +137,27 @@ body {
   color: #333;
 }
 
-.barra-navegacion-titulo {
-  font-size: 1.5rem;
-  margin: 0;
+
+
+.barra-navegacion-titulo-destacado img {
+    height: 5px;
+    width: auto;
+    display: block;
+    border-radius: 8px;
+    background: transparent;
+    box-shadow: 0 2px 8px rgba(30,48,83,0.08);
+    transition: box-shadow 0.2s, transform 0.2s;
 }
 
-.barra-navegacion-titulo-destacado {
-  color: #dc3545; /* Example highlight color */
+.barra-navegacion-titulo-destacado img:hover {
+    box-shadow: 0 6px 18px rgba(255,106,61,0.18);
+    transform: scale(1.05) rotate(-2deg);
+}
+
+.barra-navegacion-nombre {
+    font-size: 1.2em;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 
 .barra-navegacion-lista {
@@ -157,7 +170,7 @@ body {
 .barra-navegacion-item {
   text-decoration: none;
   color: #333;
-  padding: 0.5rem 1rem;
+  padding: 0.3rem 1rem;
   transition: color 0.3s ease;
 }
 
@@ -265,10 +278,13 @@ body {
 }
 
 .barra-navegacion-titulo {
-  font-size: 1.6rem;
-  font-weight: 700;
-  color: #ffffff;
-  margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 14px; /* Espacio entre logo y texto */
+    font-size: 1.7rem;
+    color: #fff;
+    font-weight: 700;
+    line-height: 1.1;
 }
 
 .barra-navegacion-titulo-destacado {
@@ -279,21 +295,27 @@ body {
   position: relative;
 }
 
-.barra-navegacion-titulo-destacado::after {
-  content: '';
-  position: absolute;
-  bottom: -3px;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(45deg, #f39c12, #f5b041);
-  transform: scaleX(0);
-  transition: transform 0.3s ease-in-out;
-}
-
 .barra-navegacion-logo:hover .barra-navegacion-titulo-destacado::after {
   transform: scaleX(1);
 }
+
+.barra-navegacion-titulo-destacado img {
+    height: 130px;
+    width: 160px;
+    width: auto;
+    background: none;
+    vertical-align: middle;
+    border-radius: 4px;
+    background: transparent;
+    box-shadow: none;
+    transition: transform 0.2s;
+}
+
+.barra-navegacion-logo:hover .barra-navegacion-titulo-destacado img {
+    box-shadow: 0 6px 18px rgba(255,106,61,0.18);
+    transform: scale(1.05) rotate(-2deg);
+}
+
 
 /* ==========================================================
    BOTÓN TOGGLE PARA MÓVILES
@@ -380,9 +402,10 @@ body {
 }
 
 .barra-navegacion-lista {
+  margin-right: 5px;
   display: flex;
   align-items: center;
-  gap: 3rem;
+  gap: 2.3rem;
   list-style: none;
 }
 
@@ -526,15 +549,12 @@ body {
 
 /* barra navegacion final */
 
-
-/* Carrusel */
 .carrusel-principal {
   position: relative;
   overflow: hidden;
   max-height: 85vh;
 }
 
-/* CARRUSEL */
 .carrusel {
   position: relative;
 }
@@ -580,15 +600,17 @@ body {
 }
 
 .carrusel-subtitulo {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   color: var(--acento);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.8rem;
+  margin-top: -40px;
+
 }
 
 .carrusel-titulo {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   font-weight: bold;
-  margin-bottom: 1.5rem;
+  margin-top: -5px;
 }
 
 /* BOTÓN */
@@ -840,78 +862,127 @@ body {
 /* Sobre Nosotros */
 .seccion-sobre {
     background: var(--blanco);
-    padding: 3rem 0;
+    padding: 4rem 0 3rem 0;
     animation: fadeIn 1.5s;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
 }
 
 .sobre-contenedor {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 0 1.5rem;
+    position: relative;
+    z-index: 1;
 }
 
 .sobre-fila {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    gap: 2rem;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    gap: 2.5rem;
 }
 
-.sobre-imagen img {
-    width: 350px;
-    border-radius: 16px;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
-    animation: zoomIn 1.2s;
+.sobre-imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .sobre-info-contenido {
-    max-width: 600px;
+    max-width: 540px;
+    margin: 0 auto;
+    flex: 2 1 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .sobre-titulo {
     color: var(--acento);
-    font-size: 2rem;
-    margin-bottom: 1rem;
+    font-size: 2.3rem;
+    margin-bottom: 1.1rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-align: center;
 }
 
 .sobre-subtitulo {
     color: var(--primario);
-    font-size: 1.1rem;
-    margin-bottom: 0.5rem;
+    font-size: 1.15rem;
+    margin-bottom: 0.7rem;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 .sobre-descripcion {
     color: var(--texto);
-    margin-bottom: 1rem;
+    margin-bottom: 1.3rem;
+    text-align: center;
+    font-size: 1.08rem;
+    line-height: 1.7;
+    background: linear-gradient(90deg, #ffffff 80%, #fdf1e9b7 100%);
+    border-radius: 12px;
+    padding: 1.1rem 1.2rem;
+    box-shadow: 0 2px 8px rgba(255,106,61,0.06);
 }
 
-.sobre-imagenes {
+.sobre-mision-vision {
     display: flex;
-    gap: 1rem;
-    margin-bottom: 1rem;
+    gap: 2rem;
+    margin: 1.2rem 0 1.5rem 0;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra las tarjetas */
 }
 
-.sobre-img-mini {
-    width: 60px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-}
-
-.sobre-img {
-    width: 100%;
-    height: auto;
+.sobre-mision, .sobre-vision {
+    flex: 1 1 220px;
+    background: var(--gris, #f7f7f7);
     border-radius: 10px;
-    opacity: 1;
-    transition: opacity 1s ease-in-out;
+    margin-top: 10px;
+    padding: 1.1rem 1rem;
+    box-shadow: 0 2px 8px rgba(30,48,83,0.06);
+    text-align: center; /* Centra el texto dentro de las tarjetas */
+    max-width: 350px;
 }
 
-/* Clase para el efecto de desvanecimiento */
-.fade-in {
-    opacity: 1;
+.sobre-mision-titulo, .sobre-vision-titulo {
+    color: var(--acento, #f39c12);
+    font-size: 1.1rem;
+    margin-bottom: 0.4rem;
+    font-weight: 700;
+    text-align: center;
 }
 
-.fade-out {
-    opacity: 0;
+.sobre-mision p, .sobre-vision p {
+    color: var(--primario, #222);
+    margin-bottom: 0;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    line-height: 1.3;
+}
+
+
+
+@media (max-width: 900px) {
+    .sobre-fila {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .sobre-mision-vision {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+    .sobre-mision, .sobre-vision {
+        max-width: 100%;
+    }
 }
 
 /* ========== RESPONSIVE DESIGN ========== */
@@ -1120,7 +1191,6 @@ body {
 
 
 
-/* Características */
 /* Características */
 .seccion-caracteristicas {
     background: var(--primario);
@@ -1526,7 +1596,7 @@ body {
 }
 
 
-/* === Estilos para Sección de Paquetes === */
+/* estilos hoteles */
 .filaPaquetes {
     display: flex;
     flex-wrap: wrap;
@@ -1587,25 +1657,46 @@ body {
     align-items: center;
 }
 
+.precioValoracion2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+
 .valoracion {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: var(--acento);
     display: flex;
     align-items: center;
     gap: 0.3rem;
 }
 
-.precio {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: var(--primario);
-}
 
 .iconoUbicacion, .iconoCalendario, .iconoPersona, .iconoEstrella {
     margin-right: 0.3rem;
     color: var(--acento);
 }
 
+.fa-map-location-dot {
+    color: #ff6a3d;
+    margin-left: 8px;
+    transition: color 0.2s;
+}
+
+.fa-map-location-dot:hover {
+    color: #1e3a5c;
+}
+
+.precio {
+    color: #1e3a5c;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+
+/* estilo hoteles fin */
 
 /* Registro */
 .contenedorSeccion {
@@ -1857,7 +1948,6 @@ body {
     font-size: 2rem;
     box-shadow: 0 2px 8px rgba(0,0,0,0.10);
     z-index: 100;
-    transition: background 0.3s, transform 0.2s;
     animation: bounce 2s infinite;
 }
 .volver-arriba:hover {
@@ -1893,6 +1983,118 @@ body {
 @keyframes bounce {
     0%, 100% { transform: translateY(0);}
     50% { transform: translateY(-10px);}
+}
+
+/* =========================
+   SECCIONES INFORMATIVAS
+   ========================= */
+.fila-infraestructura {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.carta-infra {
+    background: #f7f8fa;
+    border-radius: 18px;
+    box-shadow: 0 4px 18px rgba(30,48,83,0.08);
+    overflow: hidden;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.3s, transform 0.3s;
+    position: relative;
+}
+
+.carta-infra:hover {
+    box-shadow: 0 12px 32px rgba(255,106,61,0.18), 0 4px 16px rgba(30,48,83,0.13);
+    transform: translateY(-6px) scale(1.03);
+}
+
+.infra-img {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+}
+
+.infra-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    filter: brightness(0.96);
+}
+
+.infra-icono {
+    position: absolute;
+    bottom: 10px;
+    right: 14px;
+    background: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 2px 8px rgba(255,106,61,0.10);
+    font-size: 1.4rem;
+    color: #ff6a3d;
+    z-index: 2;
+}
+
+.infra-contenido {
+    padding: 1.1rem 1.1rem 1.2rem 1.1rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.infra-titulo {
+    font-size: 1.13rem;
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+    letter-spacing: 0.5px;
+    background: linear-gradient(90deg, #1e90ff 30%, #38b48e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.infra-contenido p {
+    color: #444;
+    font-size: 1.01rem;
+    margin-bottom: 1.1rem;
+}
+
+.infra-acciones {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+.infra-acciones a i {
+    font-size: 1.3rem;
+    color: #ff6a3d;
+    transition: color 0.2s, transform 0.2s;
+}
+
+.infra-acciones a:hover i {
+    color: #1e3a5c;
+    transform: scale(1.12);
+}
+
+@media (max-width: 900px) {
+    .fila-infraestructura {
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+    }
+    .carta-infra {
+        width: 98vw;
+        max-width: 400px;
+    }
 }
 
 
